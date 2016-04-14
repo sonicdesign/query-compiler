@@ -46,7 +46,7 @@ compile({category: 'Guitars', 'brand.name': ['Fender', 'Gibson'], {'price': {'>'
 
 // Filters Array (filters in the array are OR'd together)
 [
-    // Filter Object (property comparisons in the object are ANDed together)
+        // Filter Object (property comparisons in the object are ANDed together)
     {
         // Property Comparisons Array (comparison operation objects in the same array are OR'd together)
         'category': [
@@ -88,6 +88,18 @@ compile([{firstName: 'Bill', lastName: 'Clinton'}, {firstName: 'Barack', lastNam
         'lastName': [
             {
                 '=': 'Clinton'
+            }
+        ]
+    },
+    {
+        'firstName': [
+            {
+                '=': 'Barack'
+            }
+        ],
+        'lastName': [
+            {
+                '=': 'Obama'
             }
         ]
     }

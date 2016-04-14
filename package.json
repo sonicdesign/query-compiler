@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "jshint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/sonicdesign/query-compiler/issues"
   },
-  "homepage": "https://github.com/sonicdesign/query-compiler#readme"
+  "homepage": "https://github.com/sonicdesign/query-compiler#readme",
+  "devDependencies": {
+    "jshint": "^2.9.1"
+  }
 }

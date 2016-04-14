@@ -1,11 +1,5 @@
-import ExtendableError from './ExtendableError';
 import QueryObjectCompiler from './QueryObjectCompiler';
-
-export class InvalidArgumentError extends ExtendableError {
-    constructor(message) {
-        super(message);
-    }
-}
+import InvalidQueryError from './InvalidQueryError';
 
 const queryObjectCompiler = new QueryObjectCompiler();
 
@@ -16,5 +10,5 @@ export default function compile(input) {
         return queryObjectCompiler.compile(input);
     }
 
-    throw new InvalidArgumentError(`Argument of type ${type} cannot be compiled.`);
+    throw new InvalidQueryError(`Argument of type ${type} cannot be compiled.`);
 }
