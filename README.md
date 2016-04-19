@@ -73,7 +73,7 @@ compile({category: 'Guitars', 'brand.name': ['Fender', 'Gibson'], {'price': {'>'
 ]
 
 /**
-* Example 3: An array of high-level query query for someone named Bill Clinton or Barack Obama.
+* Example 3: An array of high-level query for someone named Bill Clinton or Barack Obama.
 */
 compile([{firstName: 'Bill', lastName: 'Clinton'}, {firstName: 'Barack', lastName: 'Obama'}]);
 
